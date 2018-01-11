@@ -1,6 +1,15 @@
 # javascript-tricks
 javascript tricks
 
+## Arrays
+
+### Union of arrays
+```javascript
+let a = [1, 2, 3, 4, 5];
+let b = [3, 4, 5, 6, 7];
+let result = [...new Set([...a, ...b])]; // [1, 2, 3, 4, 5, 6, 7]
+```
+
 ## Strings
 
 ### Reverse a string
