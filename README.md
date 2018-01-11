@@ -19,6 +19,14 @@ let b = [2, 3, 4, 6];
 let result = a.filter(a => ~b.indexOf(a)); // [2, 3, 4]
  ```
 
+### Get non intersected values
+```javascript
+let a = [1, 2, 3, 4, 5];
+let b = [2, 3, 4, 6];
+
+let result = a.filter(a => !~b.indexOf(a)); // [1, 5]
+ ```
+ 
 ## Strings
 
 ### Reverse a string
