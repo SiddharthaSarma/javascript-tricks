@@ -7,8 +7,17 @@ javascript tricks
 ```javascript
 let a = [1, 2, 3, 4, 5];
 let b = [3, 4, 5, 6, 7];
+
 let result = [...new Set([...a, ...b])]; // [1, 2, 3, 4, 5, 6, 7]
 ```
+
+### Intersection of arrays
+```javascript
+let a = [1, 2, 3, 4, 5];
+let b = [2, 3, 4, 6];
+
+let result = a.filter(a => ~b.indexOf(a)); // [2, 3, 4]
+ ```
 
 ## Strings
 
