@@ -16,7 +16,7 @@ let result = [...new Set([...a, ...b])]; // [1, 2, 3, 4, 5, 6, 7]
 let a = [1, 2, 3, 4, 5];
 let b = [2, 3, 4, 6];
 
-let result = a.filter(a => ~b.indexOf(a)); // [2, 3, 4]
+let result = a.filter(val => ~b.indexOf(val)); // [2, 3, 4]
  ```
 
 ### Get non intersected values
@@ -24,7 +24,7 @@ let result = a.filter(a => ~b.indexOf(a)); // [2, 3, 4]
 let a = [1, 2, 3, 4, 5];
 let b = [2, 3, 4, 6];
 
-let result = a.filter(a => !~b.indexOf(a)); // [1, 5]
+let result = a.filter(val => !~b.indexOf(val)); // [1, 5]
  ```
  
 ## Strings
