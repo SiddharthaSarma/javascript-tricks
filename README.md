@@ -26,6 +26,24 @@ let b = [2, 3, 4, 6];
 
 let result = a.filter(val => !~b.indexOf(val)); // [1, 5]
  ```
+### Printing array of array values in a new line
+```javascript
+const a = [
+  [11],
+  [7, 15],
+  [5, 9, 13, 20],
+  [3, 6, 8, 10, 12, 14, 18, 25]
+];
+const result = a.reduce((el, acc) => el + acc.join(' ') + '\n', '\n');
+
+// output
+/*
+  11
+  7 15
+  5 9 13 20
+  3 6 8 10 12 14 18 25
+*/
+```
  
 ## Strings
 
